@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona o Szachach</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #1e90ff, #00bfff);
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #104e8b;
+            border-radius: 8px;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 2em;
+            margin: 1em auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #1e90ff;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        footer {
+            background: linear-gradient(90deg, #00bfff, #1e90ff);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #00bfff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Witamy na stronie o szachach!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Strona główna</a></li>
+                <li><a href="#rules">Zasady gry</a></li>
+                <li><a href="#strategies">Strategie</a></li>
+                <li><a href="#history">Historia</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Dlaczego warto grać w szachy?</h2>
+        <p>Szachy to nie tylko gra, ale również doskonały sposób na rozwijanie logicznego myślenia, koncentracji i strategicznego planowania. Niezależnie od wieku, każdy może nauczyć się grać i czerpać radość z tej królewskiej gry.</p>
+        <button onclick="window.location.href='https://www.chess.com/learn'">Rozpocznij naukę</button>
+    </section>
+
+    <section id="rules">
+        <h2>Zasady gry w szachy</h2>
+        <ul>
+            <li>Każdy gracz rozpoczyna z 16 figurami: 1 królem, 1 hetmanem, 2 wieżami, 2 gońcami, 2 skoczkami i 8 pionami.</li>
+            <li>Cel gry to zamatować króla przeciwnika.</li>
+            <li>Każda figura porusza się w określony sposób. Np. wieża porusza się w linii prostej, a skoczek w kształcie litery "L".</li>
+        </ul>
+    </section>
+
+    <section id="strategies">
+        <h2>Podstawowe strategie</h2>
+        <p>Aby odnieść sukces w szachach, warto poznać kilka podstawowych zasad strategicznych:</p>
+        <ol>
+            <li><a href="https://www.chess.com/article/view/the-opening-principles">Kontroluj centrum szachownicy</a></li>
+            <li><a href="https://www.chess.com/article/view/developing-your-pieces">Rozwijaj figury w początkowej fazie gry</a></li>
+            <li><a href="https://www.chess.com/article/view/castling-in-chess">Chroń swojego króla, np. wykonując roszadę</a></li>
+        </ol>
+    </section>
+
+    <section id="history">
+        <h2>Historia szachów</h2>
+        <p>Szachy mają swoje korzenie w Indiach, gdzie około VI wieku powstała gra znana jako "czaturanga". Z czasem gra rozprzestrzeniła się na Bliski Wschód, a stamtąd do Europy, gdzie zyskała swoją obecną formę.</p>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Masz pytania? Skontaktuj się z nami pod adresem <a href="mailto:kontakt@szachy.pl">kontakt@szachy.pl</a>.</p>
+        </section>
+        <p>&copy; 2025 Strona o Szachach. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
